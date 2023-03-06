@@ -7,7 +7,13 @@ return {
     signcolumn = "yes",    -- sets vim.opt.signcolumn to auto
     wrap = true,           -- sets vim.opt.wrap
     termguicolors = true,  -- sets vim.opt.termguicolors
-    breakindent = true
+    breakindent = true,
+    completeopt = "menuone,noselect",
+    incsearch = true,
+    tabstop = 2,
+    shiftwidth = 2,
+    softtabstop = 2,
+    cmdheight = 1
   },
   g = {
     mapleader = " ",                   -- sets vim.g.mapleader
