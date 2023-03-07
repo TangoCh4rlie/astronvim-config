@@ -16,7 +16,10 @@ return {
     ["n"] = { "nzzzv" },
     ["N"] = { "Nzzzv" },
     ["<leader>ff"] = { function() require("telescope.builtin").git_files() end, desc = "Search files" },
-    ["<leader>go"] = { "<cmd>Octo pr list<cr>" },
+    ["<leader>rl"] = { "<cmd>Octo pr list<cr>" },
+    ["<leader>rs"] = { "<cmd>Octo review start<cr>" },
+    ["<leader>rv"] = { "<cmd>Octo review submit<cr>" },
+    ["<leader>rd"] = { "<cmd>Octo review discard<cr>" }
   },
   v = {
     -- Do not copy when deletting

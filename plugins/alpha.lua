@@ -26,7 +26,7 @@ return {
         astronvim.alpha_button("LDR f o", "  Recents  "),
         astronvim.alpha_button("LDR f w", "  Find Word  "),
         astronvim.alpha_button("LDR f n", "  New File  "),
-        astronvim.alpha_button("LDR g o", "  Octo pr list  "),
+        astronvim.alpha_button("LDR r l", "  Octo pr list  "),
       },
       opts = { spacing = 1 },
     },
