@@ -19,7 +19,11 @@ return {
     ["<leader>rl"] = { "<cmd>Octo pr list<cr>" },
     ["<leader>rs"] = { "<cmd>Octo review start<cr>" },
     ["<leader>rv"] = { "<cmd>Octo review submit<cr>" },
-    ["<leader>rd"] = { "<cmd>Octo review discard<cr>" }
+    ["<leader>rd"] = { "<cmd>Octo review discard<cr>" },
+    ["L"] = { function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end, desc =
+    "Next buffer" },
+    ["H"] = { function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end, desc =
+    "Previous buffer" },
   },
   v = {
     -- Do not copy when deletting
