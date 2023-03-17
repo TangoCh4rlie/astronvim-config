@@ -14,12 +14,6 @@ return {
       require("onedark").load()
     end
   },
-  {
-    "monkoose/matchparen.nvim",
-    name = "matchparen",
-    config = function() require('matchparen').setup() end,
-    event = "User AstroFile"
-  },
   -- Install treesitter-textobjects
   "nvim-treesitter/nvim-treesitter-textobjects",
   -- Github
