@@ -16,7 +16,13 @@ return {
   },
   -- Install treesitter-textobjects
   "nvim-treesitter/nvim-treesitter-textobjects",
-  -- Github
+  -- Install hop
+  {
+    "phaazon/hop.nvim",
+    config = function() require("hop").setup() end,
+    event = "User AstroFile"
+  },
+  -- ### Github ###
   -- vim fugitive
   { "tpope/vim-fugitive", lazy = false },
   -- Octo
@@ -31,7 +37,7 @@ return {
     name = "cmp_git",
     config = function() require("cmp_git").setup() end,
   },
-  -- Markdown
+  -- ### Markdown ###
   {
     "iamcco/markdown-preview.nvim",
     build = "cd app && npm install",
