@@ -6,6 +6,10 @@ return function()
   -- Auto resize split when window os resized
   vim.api.nvim_create_autocmd('VimResized', { command = 'wincmd =' })
 
+  -- Set markdown for octo files
+  local ft_to_parser = require "nvim-treesitter.parsers".filetype_to_parsername
+  ft_to_parser.octo = "markdown"
+
   -- Add new mappings using hop
   local hop = require('hop')
   local directions = require('hop.hint').HintDirection
