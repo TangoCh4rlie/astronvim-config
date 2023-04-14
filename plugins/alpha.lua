@@ -23,7 +23,7 @@ return {
       button("LDR f o", "  Recents  "),
       button("LDR f w", "  Find Word  "),
       button("LDR f n", "  New File  "),
-      button("LDR r l", "  Octo pr list  "),
+      button("LDR g o l", "  Octo pr list  "),
     }
 
     dashboard.section.footer.val =

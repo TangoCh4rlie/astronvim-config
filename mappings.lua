@@ -16,10 +16,14 @@ return {
     ["n"] = { "nzzzv" },
     ["N"] = { "Nzzzv" },
     ["<leader>ff"] = { function() require("telescope.builtin").git_files() end, desc = "Search files" },
-    ["<leader>rl"] = { "<cmd>Octo pr list<cr>" },
-    ["<leader>rs"] = { "<cmd>Octo review start<cr>" },
-    ["<leader>rv"] = { "<cmd>Octo review submit<cr>" },
-    ["<leader>rd"] = { "<cmd>Octo review discard<cr>" },
+    ["<leader>gol"] = { "<cmd>Octo pr list<cr>" },
+    ["<leader>gos"] = { "<cmd>Octo review start<cr>" },
+    ["<leader>gov"] = { "<cmd>Octo review submit<cr>" },
+    ["<leader>god"] = { "<cmd>Octo review discard<cr>" },
+    ["<leader>gor"] = { "<cmd>Octo review resume<cr>" },
+    ["<leader>goc"] = { "<cmd>Octo review commit<cr>" },
+    ["gdh"] = { "<cmd>diffget //2<cr>" },
+    ["gdl"] = { "<cmd>diffget //3<cr>" },
     ["L"] = { function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end, desc =
     "Next buffer" },
     ["H"] = { function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end, desc =
