@@ -7,8 +7,7 @@ return function()
   vim.api.nvim_create_autocmd('VimResized', { command = 'wincmd =' })
 
   -- Set markdown for octo files
-  local ft_to_parser = require "nvim-treesitter.parsers".filetype_to_parsername
-  ft_to_parser.octo = "markdown"
+  vim.treesitter.language.register("markdown", "octo")
 
   -- Add new mappings using hop
   local hop = require('hop')
