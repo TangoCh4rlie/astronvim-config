@@ -28,7 +28,7 @@ return {
   -- Octo
   {
     "pwntester/octo.nvim",
-    config = function() require('octo').setup() end,
+    config = function() require('octo').setup({ default_remote = { "upstream", "origin" } }) end,
     lazy = false
   },
   -- cmp git
