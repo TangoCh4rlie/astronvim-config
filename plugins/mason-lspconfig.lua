@@ -1,6 +1,6 @@
 return {
   "williamboman/mason-lspconfig.nvim",
   opts = {
-    ensure_installed = { "lua_ls", "elixirls" }
+    ensure_installed = { "lua_ls", "elixirls", "pylsp" }
   }
 }
